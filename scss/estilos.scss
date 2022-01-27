@@ -1,0 +1,24 @@
+
+$primary: #B7C3F3;
+$secondary: #4F6272;
+$success: #DD7596;
+$info: #25D366;
+$warning: #C13584;
+$light: #4267B2;
+
+
+
+$enable-gradient: true;
+
+$btn-padding-y: .8rem;
+$btn-padding-x: 1rem;
+
+$btn-border-radius: 1rem;
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.btn-primary{
+    border-bottom: 3px solid black(0, 0, 0, 0.27);
+} 
