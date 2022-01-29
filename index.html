@@ -14,26 +14,18 @@
 
 <body class="bg-primary">
     <!-- Header -->
-    <header class="container-fluid p-3 bg-primary rounded">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid gap-3">
-                <a class="navbar-brand" href="#index"></a>
-                <img src="./img/logoico.ico" width="160" height="130" alt="logo">
-                <button class="btn btn-success navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav gap-3">
-                        <a class="btn btn-success" aria-current="page" href="index.html">Inicio</a>
-                        <a class="btn btn-success" aria-current="page" href="tienda.html">Tienda</a>
-                        <a class="btn btn-success" aria-current="page" href="servicios.html">Servicios</a>
-                        <a class="btn btn-success" aria-current="page" href="nosotros.html">Nosotros</a>
-                        <a class="btn btn-success" aria-current="page" href="contacto.html">Contacto</a>
-                    </div>
-                </div>
-            </div>
+    <header class="container-fluid p-3 rounded">
+        <nav>
+            <!-- Imagen Logo -->
+            <a href="index.html" class="logo"><img src="./img/logoico.ico" width="160" height="130" alt="logo"></a>
+            <!-- Botonera -->
+            <ul>
+                <li><a class="btn btn-cta" href="index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a class="btn-cta" href="contacto.html">Contacto</a></li>
+            </ul>
         </nav>
     </header>
     <!-- Main -->
@@ -127,10 +119,10 @@
         </div>
     </main>
     <!-- Footer -->
-    <footer class="container-fluid shadow-sm p-3 mb-5 bg-primary rounded mt-5">
+    <footer class="container-fluid shadow-sm p-3 mb-5 rounded mt-5">
         <div class="d-flex justify-content-evenly m-5">
             <div>
-                <button type="button" class="btn btn-light"><i class="fab fa-facebook"></i></button>
+                <a class="btn" href=""><i class="fab fa-facebook"></i></a>
             </div>
             <div>
                 <button class="btn btn-warning"><i class="fab fa-instagram"></i></button>
@@ -140,17 +132,23 @@
             </div>
         </div>
         <div class="d-flex justify-content-evenly m-4 ">
-            <div class="p-1">
-                <a class="btn btn-success" href="">Ayuda</a>
+            <ul>
+                <li><a href="">Ayuda</a></li>
+                <li><a href="">Promociones</a></li>
+                <li><a href="">Sugerencias</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+            <!-- <div class="p-1">
+
             </div>
             <div class="p-1">
-                <a class="btn btn-success" href="">Promociones</a>
+
             </div>
             <div class="p-1">
-                <a class="btn btn-success" href="">Sugerencias</a>
+
             </div>
-            <div class="p-1">
-                <a class="btn btn-success" href="">Contacto</a>
+            <div class="p-1"> -->
+
             </div>
         </div>
     </footer>
