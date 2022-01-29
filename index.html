@@ -12,20 +12,37 @@
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
-<body class="bg-primary">
+<body>
     <!-- Header -->
-    <header class="container-fluid p-3 rounded">
-        <nav>
-            <!-- Imagen Logo -->
-            <a href="index.html" class="logo"><img src="./img/logoico.ico" width="160" height="130" alt="logo"></a>
-            <!-- Botonera -->
-            <ul>
-                <li><a class="btn btn-cta" href="index.html">Inicio</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a class="btn-cta" href="contacto.html">Contacto</a></li>
-            </ul>
+    <header class="container-fluid fixed-top rounded">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="index.html" class="logo"><img src="./img/logoico.ico" width="160" height="130" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="btn btn-cta" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn-cta" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- Main -->
@@ -119,37 +136,25 @@
         </div>
     </main>
     <!-- Footer -->
-    <footer class="container-fluid shadow-sm p-3 mb-5 rounded mt-5">
+    <footer class="container-fluid p-3 mb-5 rounded mt-5">
         <div class="d-flex justify-content-evenly m-5">
             <div>
-                <a class="btn" href=""><i class="fab fa-facebook"></i></a>
+                <button type="button" class="btn btn-primary"><i class="fab fa-facebook"></i></button>
             </div>
             <div>
-                <button class="btn btn-warning"><i class="fab fa-instagram"></i></button>
+                <button type="button" class="btn btn-dark"><i class="fab fa-instagram"></i></button>
             </div>
             <div>
-                <button type="button" class="btn btn-info"><i class="fab fa-whatsapp"></i></button>
+                <button type="button" class="btn btn-success"><i class="fab fa-whatsapp"></i></button>
             </div>
         </div>
-        <div class="d-flex justify-content-evenly m-4 ">
-            <ul>
+        <div>
+            <ul class="d-flex justify-content-evenly">
                 <li><a href="">Ayuda</a></li>
                 <li><a href="">Promociones</a></li>
                 <li><a href="">Sugerencias</a></li>
                 <li><a href="">Contacto</a></li>
             </ul>
-            <!-- <div class="p-1">
-
-            </div>
-            <div class="p-1">
-
-            </div>
-            <div class="p-1">
-
-            </div>
-            <div class="p-1"> -->
-
-            </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"

@@ -14,37 +14,46 @@
 
 <body>
     <!-- Header -->
-    <header class="container-fluid p-3 bg-primary rounded">
+    <header class="container-fluid fixed-top rounded">
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid gap-3">
-                <a class="navbar-brand" href="#index"></a>
-                <img src="./img/logoico.ico" width="160" height="130" alt="logo">
-                <button class="btn btn-success navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+            <div class="container-fluid">
+                <a href="index.html" class="logo"><img src="./img/logoico.ico" width="160" height="130" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav gap-3">
-                        <a class="btn btn-success" aria-current="page" href="index.html">Inicio</a>
-                        <a class="btn btn-success" aria-current="page" href="tienda.html">Tienda</a>
-                        <a class="btn btn-success" aria-current="page" href="servicios.html">Servicios</a>
-                        <a class="btn btn-success" aria-current="page" href="nosotros.html">Nosotros</a>
-                        <a class="btn btn-success" aria-current="page" href="contacto.html">Contacto</a>
-                    </div>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="btn btn-cta" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn-cta" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
     <!-- Main -->
     <main class="container">
-        <h1 class="text-center m-5">Bienvenido a la tienda</h1>
+        <button class="titulo" style="vertical-align:middle"><span>Bienvenido</span></button>
         <!-- Fila -->
         <div class="row">
             <!-- Columna -->
             <div class="col-12 col-sm-6 p-2">
                 <!-- Card -->
-                <div class="card">
+                <div class="card bg-secondary text-white">
                     <!-- Imagen -->
                     <img src="./img/vinilonavidad.jpg" alt="promo" class="rounded-circle">
                     <div class="card-body">
@@ -60,7 +69,7 @@
             <!-- Columna -->
             <div class="col-12 col-sm-6 p-2">
                 <!-- Card -->
-                <div class="card">
+                <div class="card bg-secondary text-white">
                     <!-- Imagen -->
                     <img src="./img/promo vinilo.jpg" alt="diseño" class="card-img-top">
                     <div class="card-body">
@@ -78,7 +87,7 @@
             <!-- Columna -->
             <div class="col-12 col-sm-6 p-2">
                 <!-- Card -->
-                <div class="card">
+                <div class="card bg-secondary text-white">
                     <!-- Imagen -->
                     <img src="./img/vinilonavidad.jpg" alt="promo" class="rounded-circle">
                     <div class="card-body">
@@ -94,7 +103,25 @@
             <!-- Columna -->
             <div class="col-12 col-sm-6 p-2">
                 <!-- Card -->
-                <div class="card">
+                <div class="card bg-secondary text-white">
+                    <!-- Imagen -->
+                    <img src="./img/promo vinilo.jpg" alt="diseño" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Diseño Personalizado</h5>
+                        <p class="card-text">Diseño en vinilo para decorar tus accesorios como mas quieras</p>
+                    </div>
+                    <div class="card-footer btn">
+                        <p class="text-center m-0">$800</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fila -->
+        <div class="row">
+            <!-- Columna -->
+            <div class="col-12 col-sm-6 p-2">
+                <!-- Card -->
+                <div class="card bg-secondary text-white">
                     <!-- Imagen -->
                     <img src="./img/promo vinilo.jpg" alt="diseño" class="card-img-top">
                     <div class="card-body">
@@ -106,10 +133,11 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="card h-100">
+            <!-- Columna -->
+            <div class="col-12 col-sm-6 p-2">
+                <!-- Card -->
+                <div class="card bg-secondary text-white">
+                    <!-- Imagen -->
                     <img src="./img/vinilonavidad.jpg" alt="promo" class="rounded-circle">
                     <div class="card-body">
                         <h5 class="card-title">Vinilo Navideño</h5>
@@ -121,23 +149,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="./img/promo vinilo.jpg" alt="diseño" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Diseño Personalizado</h5>
-                        <p class="card-text">Diseño en vinilo para decorar tus accesorios como mas quieras</p>
-                    </div>
-                    <div class="card-footer btn btn-outline-dark">
-                        <p class="text-center m-0">$800</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="container-fluid shadow-sm p-3 mb-5 bg-body rounded mt-5">
+    <footer class="container-fluid p-3 mb-5 rounded mt-5">
         <div class="d-flex justify-content-evenly m-5">
             <div>
                 <button type="button" class="btn btn-primary"><i class="fab fa-facebook"></i></button>
@@ -149,25 +165,21 @@
                 <button type="button" class="btn btn-success"><i class="fab fa-whatsapp"></i></button>
             </div>
         </div>
-        <div class="d-flex justify-content-evenly m-5">
-            <div>
-                <a class="nav-link link-dark" href="">Ayuda</a>
-            </div>
-            <div>
-                <a class="nav-link link-dark" href="">Promociones</a>
-            </div>
-            <div>
-                <a class="nav-link link-dark" href="">Sugerencias</a>
-            </div>
-            <div>
-                <a class="nav-link link-dark" href="">Contacto</a>
-            </div>
+        <div>
+            <ul class="d-flex justify-content-evenly">
+                <li><a href="">Ayuda</a></li>
+                <li><a href="">Promociones</a></li>
+                <li><a href="">Sugerencias</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
         crossorigin="anonymous"></script>
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
