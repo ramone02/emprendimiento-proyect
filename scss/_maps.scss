@@ -1,0 +1,20 @@
+/* Mapas de colores para Redes Sociales  */
+
+$mapRedes:(facebook:#1877f2,instagram:#c32aa3,whatsapp:#25d366);
+
+@each $red, $color in $mapRedes {
+    .#{$red}--link{
+        color: $color;
+    }
+}
+
+/* Map - Get */
+/* Estilos para botones */
+
+$estilo:(
+    border-radius: 50px,
+    padding: 20px 30px,
+);
+
+
+
