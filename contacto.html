@@ -19,14 +19,14 @@
     <header class="container-fluid fixed-top rounded">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a href="index.html" class="logo"><img src="./img/logoico.ico" width="160" height="130" alt="logo"></a>
+                <a href="index.html" class="logo"><img src="./img/logoico.ico" class="agitar" width="160" height="130" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="btn btn-cta" href="index.html">Inicio</a>
                         </li>
@@ -49,11 +49,15 @@
     </header>
     <!-- Main -->
     <main class="container">
-        <div class="mt-5">
+        <!-- Titulo -->
+        <div class="titulo">
+            <h2>Contactanos</h2>
+        </div>
+        <div class="mt-5 bg-secondary">
             <div class="row">
                 <div class="col-md-8 ml-5">
                     <div class="card-body">
-                        <h2 class="card-title">Formulario de Contacto</h2>
+                        <h2 class="card-title text-white">Formulario de Contacto</h2>
                         <form action="">
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" id="floatingInput"
@@ -73,9 +77,9 @@
                             <div class="form-floating mb-3">
                                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
                                     style="height: 100px"></textarea>
-                                <label for="floatingTextarea2">Comments</label>
+                                <label for="floatingTextarea2">Comentario</label>
                             </div>
-                            <button type="submit" class="btn btn-success">Enviar</button>
+                            <button type="submit" class="btn btn-cta">Enviar</button>
                         </form>
                     </div>
                 </div>
@@ -104,7 +108,6 @@
                 <li><a href="">Ayuda</a></li>
                 <li><a href="">Promociones</a></li>
                 <li><a href="">Sugerencias</a></li>
-                <li><a href="">Contacto</a></li>
             </ul>
         </div>
     </footer>
