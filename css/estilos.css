@@ -4558,8 +4558,8 @@ fieldset:disabled .btn {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
-  background-color: transparent;
-  border: 1px solid transparent;
+  background-color: #222831;
+  border: 1px solid white;
   border-radius: 1rem;
   -webkit-transition: -webkit-box-shadow 0.15s ease-in-out;
   transition: -webkit-box-shadow 0.15s ease-in-out;
@@ -11977,6 +11977,24 @@ fieldset:disabled .btn {
   }
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  -webkit-box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+  margin-top: 10rem;
+}
+
+header {
+  background-image: url(../img/bg4.jpg);
+  background-size: 100%;
+}
+
 .bg-success {
   --bs-bg-opacity: 50;
   background-color: #eeeeee, var(50) !important;
@@ -12052,28 +12070,14 @@ fieldset:disabled .btn {
       justify-content: space-around;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.container {
-  -webkit-box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
-  margin-top: 10rem;
-}
-
-header {
-  background-image: url(../img/bg4.jpg);
-  background-size: 100%;
-}
-
 .titulo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -12184,6 +12188,35 @@ body h2, body .h2 {
 body h3, body .h3 {
   font-weight: bolder;
   font-size: 3.5rem;
+}
+
+body h4, body .h4 {
+  font-weight: bolder;
+  font-size: 2.5rem;
+}
+
+.producto {
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.producto:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.producto .precio span {
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 ul {

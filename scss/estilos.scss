@@ -5,6 +5,20 @@
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+* {
+    @include reset-pm();
+    box-sizing: border-box;
+}
+
+.container {
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+    margin-top: 10rem;
+}
+header {
+    background-image: url(../img/bg4.jpg);
+    background-size: 100%;
+}
+
 .bg-success {
     --bs-bg-opacity: 50;
     background-color: $terciary, var(50) !important;
@@ -34,22 +48,9 @@
     justify-content: space-around;
 }
 
-* {
-    @include reset-pm();
-    box-sizing: border-box;
-}
-
-.container {
-    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
-    margin-top: 10rem;
-}
-header {
-    background-image: url(../img/bg4.jpg);
-    background-size: 100%;
-}
-
 .titulo{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 35px;
@@ -123,6 +124,27 @@ body {
     h3 {
     font-weight: bolder;
     font-size: 3.5rem;
+    }
+    h4 {
+        font-weight: bolder;
+        font-size: 2.5rem;
+    }
+}
+
+.producto{
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    transition: transform .3s;
+
+    &:hover{
+        transform: translateY(-15px);
+        transition: transform .3s;
+    }
+
+    .precio span{
+        font-weight: bold;
+        font-size: 2rem;
     }
 }
 
